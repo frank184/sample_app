@@ -9,6 +9,9 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
+# Add-on gems
+gem 'bootstrap-sass', '>= 3.2.0.0'
+
 group :development, :test do
   gem 'sqlite3'
   gem 'byebug'

@@ -13,6 +13,12 @@ class StaticPagesControllerTest < ActionController::TestCase
     assert_select "title", "About" + append_base_title
   end
 
+  test "should get contact" do
+    get :contact
+    assert_response :success
+    assert_select "title", "Contact" + append_base_title
+  end
+
   test "should get help" do
     get :help
     assert_response :success
@@ -20,6 +26,7 @@ class StaticPagesControllerTest < ActionController::TestCase
   end
 
   private
+  
   def base_title
     return "Ruby on Rails Sample App"
   end
